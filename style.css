@@ -5,7 +5,7 @@ body {
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 48px;
 }
 
 h2 {
@@ -27,29 +27,31 @@ img {
     text-transform: capitalize;
     padding: 13px 28px;
     border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
 }
 
 /* Hero Section Style */
-.hero-section {
+.hero-section,
+.commiunity-section,
+.missions {
     display: flex;
-
-}
-
-.hero-img {
-    width: 70%;
 }
 
 .half-width {
     width: 50%;
-    margin-left: 10%;
+    margin: 0 10%;
 }
 
-.hero-left {
+
+.hero-left,
+.hero-right {
     margin-top: 5%;
     text-transform: capitalize;
 }
 
 .hero-left h1 {
+    font-family: 'Yeseva One', cursive;
     text-transform: capitalize;
 }
 
@@ -57,23 +59,29 @@ span {
     color: orange;
 }
 
-.hero-title h1 {
+.hero-title {
+    position: relative;
+}
+
+.hero-title h1::before {
+    content: "";
+    position: absolute;
+    height: 80%;
+    width: 4px;
+    top: 10px;
+    left: 0;
     border-left: 4px solid #FF5959;
-    margin-right: 20px;
+    margin-left: -20px;
 }
 
 /* My Mission Section Style */
 .missions-section {
-    margin: 0 10%;
+    margin: 100px 10%;
 }
 
 .missions-section h2 {
     text-align: center;
     font-weight: 700;
-}
-
-.missions {
-    display: flex;
 }
 
 .missions img {
@@ -85,6 +93,7 @@ span {
     border-radius: 20px;
     padding: 20px;
     margin: 10px;
+    box-shadow: 2px 3px 2px gray;
 
 }
 
@@ -119,4 +128,23 @@ footer h2 {
 
 footer p {
     color: #A6A7AF;
+}
+
+/* Documentation Section Style */
+
+.documentation {
+    display: flex;
+}
+
+
+.documentation .half-width:nth-child(1) {
+    margin-right: 0;
+}
+
+.documentation .half-width:nth-child(2) {
+    margin-left: 0;
+}
+
+.long-side {
+    padding: 0 70px;
 }
