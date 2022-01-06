@@ -34,7 +34,8 @@ img {
 /* Hero Section Style */
 .hero-section,
 .commiunity-section,
-.missions {
+.missions,
+.latest-post {
     display: flex;
 }
 
@@ -114,6 +115,62 @@ span {
     background-color: #FFF4D6;
 }
 
+
+/* Documentation Section Style */
+
+.documentation {
+    display: flex;
+    background-image: url(images/illustrators/shape-1.png);
+    background-repeat: no-repeat;
+    background-size: 15%;
+    background-position: left 40%;
+}
+
+
+.documentation .half-width:nth-child(1) {
+    margin-right: 0;
+}
+
+.documentation .half-width:nth-child(2) {
+    margin-left: 0;
+}
+
+.long-side {
+    padding: 0 70px;
+}
+
+/* Commiunity Section style */
+.commiunity-section {
+    background-image: url(images/illustrators/shape-1.png);
+    background-repeat: no-repeat;
+    background-size: 15%;
+    background-position: right 100%;
+}
+
+/* Latest Post Section Style */
+/* .latest-posts-section{
+    position: relative;
+}  */
+.latest-posts-section h2 {
+    text-align: center;
+}
+
+
+.latest-posts-section h2::after {
+    content: "";
+    width: 150px;
+    margin: 0 auto;
+    display: block;
+    border-bottom: 3px solid #FF5959;
+}
+
+.single-post {
+    padding: 15px 16px;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 8px 6px grey;
+}
+
 /* Footer section Style */
 footer {
     text-align: center;
@@ -128,23 +185,4 @@ footer h2 {
 
 footer p {
     color: #A6A7AF;
-}
-
-/* Documentation Section Style */
-
-.documentation {
-    display: flex;
-}
-
-
-.documentation .half-width:nth-child(1) {
-    margin-right: 0;
-}
-
-.documentation .half-width:nth-child(2) {
-    margin-left: 0;
-}
-
-.long-side {
-    padding: 0 70px;
 }
